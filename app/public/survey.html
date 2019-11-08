@@ -148,6 +148,8 @@
               </footer>
           
             </div>
+
+            <!-- This is supposed to store the scores and help select the best office match-->
     
             <div id="resultsModal" class="modal" role="dialog">
                 <div class="modal-dialog">
@@ -159,7 +161,6 @@
                         </div>
                         <div class="modal-body">
                             <h2 id="matchName"></h2>
-                            <img id="matchImage" src="https://images-na.ssl-images-amazon.com/images/I/41WYtaGHdDL.jpg" alt="">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class ="btn btn-default" data-dismiss="modal">Close</button>
@@ -167,7 +168,7 @@
                     </div>
                 </div>
             </div>
-    
+    <!-- This is supposed to go through the questions to see who matches you closely to an office character-->
             <script type="text/javascript">
             if (validform()){
                 varUserData = {
@@ -193,11 +194,11 @@
                    
                    
                     $("resultsModal").modal("toggle");
-                    alert("working");
+                    alert("It works!");
                 });
             }
                 else {
-                    alert ("Please fill out the form!");
+                    alert ("Fill out the entire form, you idiot! -Dwight Schrute");
                 }
                 return false;
             </script>    
